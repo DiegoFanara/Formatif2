@@ -4,7 +4,8 @@ const addTaskBtn = document.getElementById("addTask") ;
 
 const taskList = document.getElementById("taskList") ;
 
- 
+var task = "Task"; 
+var i =0;
 
 // La fonction trim() en JavaScript est utilisée pour supprimer les espaces (espaces, tabulations et
 
@@ -51,5 +52,8 @@ function addTask() {
  
 
  }
+
+ localStorage.setItem(task.concat(i), taskText);
+ i++;
 
  }
